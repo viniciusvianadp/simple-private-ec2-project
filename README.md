@@ -26,3 +26,6 @@ For this project, it is possible to make the GET request to this api only after 
 To access the private EC2 instance, you can SSH into the public EC2 instance and then access the private instance from there (also via SSH).
 
 Both instances are connected using the key specified using the key_pair_name variable inside the `variables.tf` file.
+
+# Diagram
+![image](https://github.com/viniciusvianadp/simple-private-ec2-project/assets/86125479/c0635244-f4f2-41c7-a369-e82f1680b1f6)
