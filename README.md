@@ -17,7 +17,9 @@ The public subnet contains an EC2 instance that serves as the web server. It is 
 
 ### Private EC2 Instance
 
-The private subnet contains an EC2 instance that serves as the backend server. It is not directly accessible from the internet. To enable outbound internet access for this instance, a NAT Gateway is used. The private EC2 instance has Docker installed and runs a containerized REST API. The API responds with a "Hello World" object when accessed on port 8080: `https://github.com/thomaspoignant/hello-world-rest-json`
+The private subnet contains an EC2 instance that serves as the backend server. It is not directly accessible from the internet. To enable outbound internet access for this instance, a NAT Gateway is used. The private EC2 instance has Docker installed and runs a containerized REST API. The API responds with a "Hello World" object when accessed on port 8080: `https://github.com/thomaspoignant/hello-world-rest-json`.
+
+For this project, it is possible to make the GET request to this api only after accessing the public EC2 instance, using `curl`, for example. The main purpose of this project is to create a simple project that provides a basic infrastructure in AWS using terraform.
 
 ## SSH Access
 
